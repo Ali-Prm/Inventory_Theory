@@ -19,7 +19,7 @@ A Company tries to optimize its operation using optimal `(S,s)` policy. The owne
 If the company orders Z items, it incurs a cost of `K+iZ`, where `K` is the fix order cost and `i` is the incremental cost per item ordered. <br>
 When an order is placed, the time required for it to arrive (called the delivery lag or lead time) is a random variable that is distributed uniformly between 0 and 1 day. <br>
 When a demand occurs, it is satisfied immediately if the inventory level is at least as large as the demand. If the demand exceeds the inventory level, the excess of demand over supply is backlogged and satisfied by future deliveries. When an order arrives, it is fi rst used to eliminate as much of the backlog (if any) as possible; the remainder of the order (if any) is added to the inventory. <br>
-Most real inventory systems also have two additional types of costs, holding and shortage costs. Let I(t) be the inventory level at time t [note that I(t) could be positive, negative, or zero]; let I+(t)=max{I(t), 0} be the number of items physically on hand in the inventory at time t [note that I+(t)>=0]; and let I-(t)=max{-I(t), 0} be the backlog at time t [I-(t)>=0 as well].
+Most real inventory systems also have two additional types of costs, holding and shortage costs. Let I(t) be the inventory level at time t [note that I(t) could be positive, negative, or zero]; let I+(t)=max{I(t), 0} be the number of items physically on hand in the inventory at time t [note that I+(t)>=0]; and let I-(t)=max{-I(t), 0} be the backlog at time t [I-(t)>=0 as well]. The holding and shortage costs are computed when we have I+(t) and I-(t) respectively.
 
 
 
